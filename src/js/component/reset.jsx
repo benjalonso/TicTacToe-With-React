@@ -2,15 +2,6 @@ import React, { useState } from "react";
 import "animate.css";
 
 const Reset = () => {
-	const [symbol, setSymbol] = useState("X");
-	// Lista de componentes necesarios:
-	// Componente de tablero
-	// Componente de inicio del juego
-	// Componente de reseteo
-	// Posibles opciones de juego
-	// Función que determine al ganador
-	// Función de jugadores
-
 	return (
 		<>
 			<div class="container">

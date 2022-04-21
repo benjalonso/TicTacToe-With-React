@@ -1,4 +1,4 @@
-@import 'animate.css';
+
 @import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
 
 
@@ -17,8 +17,8 @@ body {
 }
 
 .table {
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
     margin: auto;
     color: rgb(9, 79, 211);
     font-size: 45px;
@@ -26,16 +26,23 @@ body {
     font-weight: 500;
     vertical-align: middle;
     cursor: pointer;
+    display: grid;
+	grid: repeat(3, 1fr) / repeat(3, 1fr);
     
 }
 
-.borderR {
+.borderBR {
+    border-bottom: #e0be36 3px solid;
     border-right: #e0be36 3px solid;
 
 }
 
-#borderB {
+.borderB {
     border-bottom: #e0be36 3px solid;
+
+}
+.borderR {
+    border-right: #e0be36 3px solid;
 
 }
 
