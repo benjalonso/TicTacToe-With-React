@@ -1,19 +1,24 @@
 @import 'animate.css';
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
 
 body {
     background: rgb(0, 0, 0);
+    font-family: 'Lato', sans-serif;
 
 }
-#tittle{
+
+#tittle {
     text-align: center;
     color: #F1C40F;
     animation: backwards;
     animation-duration: 2s;
+    font-size: 70px;
 }
 
 .table {
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     margin: auto;
     color: rgb(9, 79, 211);
     font-size: 45px;
@@ -21,23 +26,86 @@ body {
     font-weight: 500;
     vertical-align: middle;
     cursor: pointer;
+    
 }
 
 .borderR {
-    border-right: #F1C40F 3px solid;
+    border-right: #e0be36 3px solid;
 
 }
 
 #borderB {
-    border-bottom: #F1C40F  3px solid;
+    border-bottom: #e0be36 3px solid;
 
 }
-.hide{
-display: none;
+
+.hide {
+    display: none;
 }
+
 .visible {
     display: block;
 }
+.x-hover:hover::before{
+    content: "X";
+    opacity: 0.8;
+}
+.o-hover:hover::after{
+    content: "O";
+    opacity: 0.8;
+}
+/* Estilos del botón */
+/* 
+.container {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
 
+.center {
+    width: 180px;
+    height: 60px;
+    position: absolute;
+}
 
+.btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #e0be36;
+    outline: none;
+    transition: 1s ease-in-out;
+}
 
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+}
+
+.btn:hover {
+    transition: 1s ease-in-out;
+    background: #e0be36;
+}
+
+.btn:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.btn span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}

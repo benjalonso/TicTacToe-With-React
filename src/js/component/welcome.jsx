@@ -1,10 +1,7 @@
 import React, { useState } from "react";
-import Board from "./board.jsx";
-import Welcome from "./welcome.jsx";
-import Reset from "./reset.jsx";
 import "animate.css";
 
-const Home = () => {
+const Welcome = () => {
 	const [symbol, setSymbol] = useState("X");
 	// Lista de componentes necesarios:
 	// Componente de tablero
@@ -16,11 +13,11 @@ const Home = () => {
 
 	return (
 		<>
-			<Welcome />
-			<Board />
-			<Reset />
+			<h1 id="tittle" className="animate__jackInTheBox">
+				Tic Tac Toe in React.js
+			</h1>
 		</>
 	);
 };
 
-export default Home;
+export default Welcome;
